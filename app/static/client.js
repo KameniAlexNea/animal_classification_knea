@@ -29,9 +29,9 @@ function analyze() {
     xhr.onload = function (e) {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
-            if (response === '0') {
+            if (response == '0') {
                 response = "Elephant"
-            } else if (response === '1') {
+            } else if (response == '1') {
                 response = "Zebra"
             }
             el("result-label").innerHTML = `Result = ${response["result"]}`;
