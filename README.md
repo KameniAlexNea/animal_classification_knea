@@ -1,2 +1,3 @@
 # animal_classification_knea
-Classifcation of Zebras and Elephants
+
+Real-time animals classification and notebook using **Standard Bank Tech Impact Challenge: Animal classification**{https://zindi.africa/competitions/sbtic-animal-classification/data} dataset with cnn_learner model from PyTorch
