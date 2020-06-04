@@ -1,41 +1,50 @@
 <html lang='en'>
+
 <head>
   <meta charset='utf-8'>
   <link rel='stylesheet' href='../static/style.css'>
   <script src='../static/client.js'></script>
 </head>
+
 <body>
-<div>
-  <div class='center'>
-    <div class='title'>Classify Zebra [Class 1] and Elephant [Class 0] By Kameni Alex Nea</div>
-    <p>
-      Use images of <strong>elephant</strong> animal, <strong>zebra</strong> animal, or
-      all two!
-    </p>
-    <div class='content'>
-      <div class='no-display'>
-        <input id='file-input'
-               class='no-display'
-               type='file'
-               name='file'
-               accept='image/*'
-               onchange='showPicked(this)'>
-      </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-      <div class='upload-label'>
-        <label id='upload-label'>No file chosen</label>
-      </div>
+  <div>
+    <div class='center'>
+      <div class='title'>Classify Zebra And Elephant By Kameni Alex Nea</div>
       <div>
-        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+        Given an image, this website will allow you to tell if it is an elephant or a zebra.
+        The past image must contain at least one of the two species.<br />
+        The behavior of this website for images containing other things is a priori unknown.<br />
+        <div>
+          To analyze an image<br/>
+          Click on <strong>select an image</strong><br/>
+          Then on <strong>analyze</strong> to analyze<br/>
+        </div>
       </div>
-      <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-      </div>
-      <div class='result-label'>
-        <label id='result-label'></label>
+      <p>
+        Use images of <strong>elephant</strong>, <strong>zebra</strong>, or
+        all two!
+      </p>
+      <div class='content'>
+        <div class='no-display'>
+          <input id='file-input' class='no-display' type='file' name='file' accept='image/*'
+            onchange='showPicked(this)'>
+        </div>
+        <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+        <div class='upload-label'>
+          <label id='upload-label'>No file chosen</label>
+        </div>
+        <div>
+          <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+        </div>
+        <div class='analyze'>
+          <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        </div>
+        <div class='result-label'>
+          <label id='result-label'></label>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </body>
+
 </html>

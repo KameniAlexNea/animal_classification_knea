@@ -8,7 +8,7 @@ body {
 
 .center {
     margin: auto;
-    padding: 10px 50px;
+    padding: 8px 50px;
     text-align: center;
     font-size: 14px;
 }
@@ -21,11 +21,11 @@ body {
 }
 
 .content {
-    margin-top: 10em;
+    margin-top: 3em;
 }
 
 .analyze {
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .upload-label {
